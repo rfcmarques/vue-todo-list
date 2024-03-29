@@ -1,10 +1,13 @@
 import Assignments from "./Assignments.js"
+import Card from "./Card.js"
 
 export default {
-    components: { Assignments },
+  components: { Assignments, Card },
 
-    template: `
+  template: `
+    <div class="grid gap-6">
       <assignments></assignments>
-    `,
+
+    </div>`,
 
 }

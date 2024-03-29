@@ -1,11 +1,12 @@
-import Assignment from "./Assignment.js"
-import AssignmentTags from "./AssignmentTags.js"
+import Assignment from "./Assignment.js";
+import AssignmentTags from "./AssignmentTags.js";
+import Card from "./Card.js";
 
 export default {
-    components: { Assignment, AssignmentTags },
+    components: { Assignment, AssignmentTags, Card },
 
     template: `
-    <section v-show="assignments.length" class="w-60">
+    <Card v-show="assignments.length" class="w-70">
         <div class="flex justify-between items-start">
             <h2 class="font-bold mb-2">
                 {{ title }}
@@ -29,7 +30,7 @@ export default {
         </ul>
             
         <slot></slot>
-    </section>`,
+    </Card>`,
 
     props: {
         assignments: Array,
