@@ -1,4 +1,7 @@
 {
+  "scripts": {
+    "start": "npx json-server db.json -p 8080"
+  },
   "devDependencies": {
     "json-server": "^1.0.0-alpha.23"
   }
